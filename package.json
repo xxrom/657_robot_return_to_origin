@@ -1,0 +1,9 @@
+{
+  "name": "657_robot_return_to_origin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
