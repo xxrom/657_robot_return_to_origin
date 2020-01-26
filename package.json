@@ -5,5 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon --exec 'python main.py' ./main.py"
   }
 }
