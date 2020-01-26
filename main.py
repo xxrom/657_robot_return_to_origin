@@ -1,26 +1,24 @@
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
         # print('moves', moves)
-        left = 0
-        right = 0
-        up = 0
-        down = 0
+        vertical = 0
+        horizontal = 0
 
         for char in moves:
             if char == "L":
-                left += 1
+                horizontal += 1
             if char == "U":
-                up += 1
+                vertical += 1
             if char == "R":
-                right += 1
+                horizontal -= 1
             if char == "D":
-                down += 1
+                vertical -= 1
 
-        # print('L %d, U %d, R %d, D %d' % (left,  up, right, down))
+        print('H %d, V %d' % (horizontal, vertical))
 
         # if each side in sum by lines gets zero (0),
         # then robot retruns on start postion
-        return (left - right) == 0 and (up - down) == 0
+        return horizontal == 0 and vertical == 0
 
 
 my = Solution()
